@@ -2,6 +2,8 @@
 
 **BearBot** is a web application that allows a user to interact with a bot, providing information and identifying different types of bears.
 
+The site is here: http://bearopedia.xyz/
+
 We used a Convoltional Neural Net To identify diffrent Bears(Grizzly, Panda, Polar, Sun) .The Model can be found [here](https://colab.research.google.com/drive/1bEDJMK19cd0RJ4m3J6FHoq6uZCYqTvZN?usp=sharing)
 
 The ChatBot was made with RASA it's open source NLP model that let's you create conversational AI chat bots.
