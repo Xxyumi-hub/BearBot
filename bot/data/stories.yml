@@ -17,6 +17,10 @@ rules:
   steps:
   - intent: capabilities
   - action: utter_capabilities
+- rule: image
+  steps:
+  - intent: images
+  - action: action_predict_image
 
 stories:
 - story: happy path 1

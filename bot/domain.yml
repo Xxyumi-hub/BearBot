@@ -12,8 +12,9 @@ intents:
   - test
   - whatsname
   - whomade
+  - images
 actions:
-  - action_test
+  - action_predict_image
 responses:
   utter_name:
   - text: "Hi My Name Is Grizz Bot 🐻"

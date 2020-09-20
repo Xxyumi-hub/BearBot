@@ -1,6 +1,13 @@
 version: "2.0"
 
 nlu:
+- intent: images
+  examples: |
+    - https://bearopedia.s3-us-west-2.amazonaws.com/1600582236427.jpeg
+    - https://bearopedia.s3-us-west-2.amazonaws.com/1600582233052.jpeg
+    - https://bearopedia.s3-us-west-2.amazonaws.com/1600582229402.jpeg
+    - https://bearopedia.s3-us-west-2.amazonaws.com/1600582226129.jpeg
+    - https://bearopedia.s3-us-west-2.amazonaws.com/1600582223358.jpeg 
 - intent: test
   examples: |
     - test
