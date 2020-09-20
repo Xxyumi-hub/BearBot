@@ -1,9 +1,11 @@
-# BearQuiz
+# BearBot
 
-**BearQuiz** is an web form that determines what type of bear a person would be
+**BearBot** is a web application that allows a user to interact with a bot, providing information and identifying different types of bears.
 
-Submitted by: **Grace and Shashwat**
+Technologies used: HTML, CSS, RASA, Gatsby, Amazon AWS cloud, and Convolutional Neural Networks
 
-Here's a walkthrough of the web form:
+# Video Walkthrough
 
-(insert gif)
+Here's a walkthrough of the application:
+
+<img src='' title='Video Walkthrough' width='' alt='Gif Video Walkthrough of the application' />
