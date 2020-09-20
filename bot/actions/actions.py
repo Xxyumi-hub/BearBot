@@ -8,6 +8,7 @@ import requests
 from io import BytesIO
 import numpy as np
 import pprint
+import random
 #
 #
 # class ActionHelloWorld(Action):
@@ -41,3 +42,49 @@ class ActionTest(Action):
         score = tf.nn.softmax(predictions[0])
         print("This image most likely belongs to {} with a {:.2f} percent confidence.".format(self.class_names[np.argmax(score)], 100 * np.max(score)))
         dispatcher.utter_message(text = f'This image most likely belongs to {self.class_names[np.argmax(score)]} with a {100 * np.max(score):.2f} percent confidence.')
+
+class SpitMessage(Action):
+    def name(self):
+        return 'action_facts'
+    def run(self, dispatcher, tracker, domain):
+        entity = tracker.latest_message['entities'][0].get('value')
+        data = [
+                    {'grizzly' : [
+                        "Grizzlies can vary in color, from light cream to brown to black.",
+                        "They are distinguished from black bears by a hump on their back. The hump is a mass of muscles used for digging."
+                        ]
+                    },
+                    {'panda':[
+                        "Pandas are shy; they don't venture into areas where people live. This restricts pandas to very limited areas.",
+                        "Prehistoric pandas lived up to 2 million years ago"
+                        ]
+                    },
+                    {'polar':[
+                        "Polar Bears are actually black, not white",
+                        "They can smell their prey up to a kilometer away"
+                        ]
+                    },
+                    {'sun':[
+                        "The sun bear is the smallest, most arboreal and least studied bear. It is the second rarest bear species, after the giant panda."
+                        ]
+                    }
+                ]
+        print(entity)
+        for i in data:
+            for j in i:
+                if(j == entity):
+                    message = i[j]
+        dispatcher.utter_message(text = f'{random.choice(message)}')
+        
+
+
+
+
+
+
+
+
+
+
+
+

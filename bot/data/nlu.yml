@@ -1,6 +1,20 @@
 version: "2.0"
 
 nlu:
+- intent: facts
+  examples: |
+    - Tell me something about [grizzly]("bear") bear
+    - Facts about [grizzly]("bear") bear
+    - Some facts about [grizzly]("bear") bear
+    - Tell me something about [panda]("bear") bear
+    - Facts about [panda]("bear") bear
+    - Some facts about [panda]("bear") bear
+    - Tell me something about [sun]("bear") bear
+    - Facts about [sun]("bear") bear
+    - Some facts about [sun]("bear") bear
+    - Tell me something about [polar]("bear") bear
+    - Facts about [polar]("bear") bear
+    - Some facts about [polar]("bear") bear
 - intent: images
   examples: |
     - https://bearopedia.s3-us-west-2.amazonaws.com/1600582236427.jpeg
@@ -8,6 +22,7 @@ nlu:
     - https://bearopedia.s3-us-west-2.amazonaws.com/1600582229402.jpeg
     - https://bearopedia.s3-us-west-2.amazonaws.com/1600582226129.jpeg
     - https://bearopedia.s3-us-west-2.amazonaws.com/1600582223358.jpeg 
+
 - intent: test
   examples: |
     - test

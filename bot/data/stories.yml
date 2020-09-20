@@ -5,6 +5,10 @@ rules:
   steps:
   - intent: greet
   - action: utter_greet
+- rule: spit facts
+  steps:
+  - intent: facts
+  - action: action_facts
 - rule: Say bot name 
   steps:
   - intent: whatsname
@@ -33,23 +37,3 @@ stories:
   - intent: affirm
   - action: utter_sendpic
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - action: utter_capabilities
-  - action: utter_sendpic
-
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye

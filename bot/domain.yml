@@ -13,7 +13,11 @@ intents:
   - whatsname
   - whomade
   - images
+  - facts
+entities:
+  - bear
 actions:
+  - action_facts
   - action_predict_image
 responses:
   utter_name:
@@ -39,7 +43,7 @@ responses:
   - text: "okay"
 
   utter_happy:
-  - text: "Good to hear that,"
+  - text: "Good to hear that, If you send me a picture of Bear I can Help you identify & give you facts about it"
 
   utter_capabilities:
   - text: "If you send me a picture of Bear I can Help you identify & give you facts about it"
