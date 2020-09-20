@@ -8,4 +8,4 @@ Technologies used: HTML, CSS, RASA, Gatsby, Amazon AWS cloud, and Convolutional 
 
 Here's a walkthrough of the application:
 
-<img src='' title='Video Walkthrough' width='' alt='Gif Video Walkthrough of the application' />
+<img src='https://github.com/Xxyumi-hub/BearBot/blob/master/Gif3.gif' title='Video Walkthrough' width='' alt='Gif Video Walkthrough of the application' />
